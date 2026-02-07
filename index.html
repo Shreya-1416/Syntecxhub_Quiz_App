@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="quiz-container">
+
+    <!-- Theme Toggle -->
+    <div class="theme-toggle">
+      <input type="checkbox" id="toggleTheme">
+      <label for="toggleTheme"></label>
+    </div>
+
+    <!-- Difficulty Selector -->
+    <select id="difficultySelect">
+      <option value="all">All Levels</option>
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+
+    <h1>Quiz App</h1>
+
+    <p id="bestScore">Best Score: 0</p>
+    <p id="progress"></p>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <h2 id="question"></h2>
+
+    <div class="options">
+      <label><input type="radio" name="answer" value="0"> <span id="opt0"></span></label>
+      <label><input type="radio" name="answer" value="1"> <span id="opt1"></span></label>
+      <label><input type="radio" name="answer" value="2"> <span id="opt2"></span></label>
+    </div>
+
+    <button id="nextBtn">Next</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
